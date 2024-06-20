@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri", sans-serif;
+}
+
+/** Nav-bar Component**/
+
+header {
+    height: 7vh;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+}
+
+nav > section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > section > a {
+    font-size: 3rem;
+
+    margin: 0;
+    color: white;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+}
+
+nav > ul {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+nav li {
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    margin: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.active {
+    color: rgb(85, 224, 178);
+}
+
+/** Home Page **/
+
+main {
+    margin: 5rem 5rem 0;
+}
+table {
+    width: 100%;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+thead > tr {
+    display: flex;
+    margin: 1rem;
+    font-size: 1.1rem;
+    border: none;
+}
+table th {
+    flex: 3;
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+}
+table td {
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    padding: 1.2rem;
+}
+.edit {
+    background-color: rgb(255, 208, 0);
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 3px;
+    border: 2px solid rgb(207, 169, 0);
+    color: black;
+    font-weight: bold;
+}
+.edit:hover {
+    background-color: rgb(207, 169, 0);
+    transition: 0.3s ease;
+}
+.delete {
+    background-color: red;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 3px;
+    border: 2px solid rgb(102, 0, 0);
+    color: white;
+    font-weight: bold;
+}
+.delete:hover {
+    background-color: rgb(102, 0, 0);
+    transition: 0.3s ease;
+}
+.white-text{
+    color: white;
+    font-size: 1.2rem;
+}
+
+/** New-product Page **/
+
+main section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+main section > h1 {
+    font-size: 2rem;
+}
+
+main form input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.3rem 0 1rem 0;
+    padding: 0.7rem 0 0.7rem;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color:rgb(236, 236, 236)
+}
+
+main form label {
+    font-size: 1.1rem;
+}
+
+main form > button {
+    background-color: rgb(85, 224, 178);
+    padding: 0.6rem 0.7rem 0.6rem 0.7rem;
+    border: 3px solid rgb(69, 182, 144);
+    border-radius: 3px;
+    margin-top: 0.5rem;
+}
+
+main form > button:hover {
+    cursor: pointer;
+    background-color: rgb(69, 182, 144);
+    transition: 0.2s ease;
+}
+
+.alert-success{
+    background-color: rgb(124, 184, 124);
+    border: 3px solid green;
+    border-radius: 3px;
+    padding: 0.6em;
+    color: white;
+}
+.alert-error{
+    background-color: rgb(248, 103, 103);
+    border: 3px solid red;
+    border-radius: 3px;
+    padding: 0.6em;
+    color: white;
+}
